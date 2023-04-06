@@ -8,4 +8,9 @@ def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return x.mean() # Ваш ответ
+    n = len(x)
+    total_count = np.sum(x)
+    
+    # Вычисляем оценку параметра lambda
+    res = total_count / (56 * n)
+    return res # Ваш ответ
